@@ -1,4 +1,4 @@
-const num1 = 5;
+const num1 = 6;
 const num2 = 6;
 
 // add two numbers
