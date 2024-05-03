@@ -1,8 +1,9 @@
-const num1 = 5;
-const num2 = 6;
+// program to convert celsius to fahrenheit
+// ask the celsius value to the user 
+const celsius = prompt("Enter a celsius value: ");
 
-// add two numbers
-const sum = num1 + num2;
+// calculate fahrenheit
+const fahrenheit = (celsius * 1.8) + 32
 
-// display the sum
-console.log('The sum of ' + num1 + ' and ' + num2 + ' is: ' + sum);
+// display the result
+console.log(`${celsius} degree celsius is equal to ${fahrenheit} degree fahrenheit.`);
