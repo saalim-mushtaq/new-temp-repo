@@ -1,11 +1,12 @@
-name: Reuse PR Agent Workflow
+name: Caller Workflow
 
 on:
-  workflow_call:
+  pull_request:
+    types: [opened, reopened, ready_for_review]
 
 jobs:
-  call-pr-agent-workflow:
+  call_pr_agent:
     runs-on: ubuntu-latest
     steps:
-      - name: Include Workflow from Temp Repo
+      - name: Call Codium PR Agent Workflow
         uses: cryptlex/temp-repo/.github/workflows/pr_agent.yml@main
